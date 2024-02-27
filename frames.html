@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Two-Column Layout with Links</title>
+    <style>
+      body,
+      html {
+        margin: 0;
+        padding: 0;
+        height: 100%;
+      }
+      .container {
+        display: flex;
+        height: 100%;
+      }
+      .left-column {
+        width: 30%;
+        background-color: #f0f0f0; /* Optional styling */
+      }
+      .right-column {
+        width: 70%;
+      }
+      iframe {
+        width: 100%;
+        height: 100%;
+        border: none; /* Remove iframe border */
+      }
+      .left-column a {
+        display: block;
+        padding: 10px;
+        text-decoration: none;
+        color: #333;
+      }
+      .left-column a:hover {
+        background-color: #ddd;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="left-column">
+        <!-- Left column links -->
+        <a href="s1.html" target="iframe">Page 1</a>
+        <a href="s2.html" target="iframe">Page 2</a>
+        <a href="s3.html" target="iframe">Page 3</a>
+      </div>
+      <div class="right-column">
+        <!-- Right column content -->
+        <iframe name="iframe" src="l1.jpg"></iframe>
+      </div>
+    </div>
+  </body>
+</html>

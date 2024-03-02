@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="blogstyle.css" />
+  </head>
+  <body>
+    <div id="header">
+      <div class="container">
+        <nav>
+          <img src="" alt="" />
+          <ul>
+            <li><a href="#header">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#portfolio">My Work</a></li>
+          </ul>
+        </nav>
+        <div class="header-text">
+          <h1>Hi, I'm <span>Usha Sree</span><br />Vaddeboyina from India</h1>
+        </div>
+      </div>
+    </div>
+    <div id="about">
+      <div class="container">
+        <div class="row">
+          <div class="about-col-1">
+            <img src="images/pic.jpg" alt="" />
+          </div>
+          <div class="about-col-2">
+            <h1 class="sub-title">About Me</h1>
+            <p>
+              I'm Usha Sree Vaddeboyina. I'm from Hyderabad, India. I'm pursuing
+              my Btech in Malla Reddy College of Engineering and Technology from
+              the department of Computer Science and Engineering in Artificial
+              Intelligence and Machine Learning.
+            </p>
+            <div class="tab-titles">
+              <p class="tab-links active-link" onclick="opentab('skills')">
+                Skills
+              </p>
+              <p class="tab-links" onclick="opentab('education')">Education</p>
+              <p class="tab-links" onclick="opentab('certifications')">
+                Certifications
+              </p>
+            </div>
+            <div class="tab-contents active-tab" id="skills">
+              <ul>
+                <li>Full Stack Development</li>
+                <li>Proficient in Python, Java</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="education">
+              <ul>
+                <li><span>2019</span><br />10th from Geetanjali High School</li>
+                <li>
+                  <span>2020-21</span><br />Intermediate from Narayana Junior
+                  College
+                </li>
+                <li><span>2021-25</span><br />Pursuing Btech from MRCET</li>
+              </ul>
+            </div>
+            <div class="tab-contents" id="certifications">
+              <ul>
+                <li>
+                  <span>DeepLearning.AI</span><br />Introduction to Machine
+                  Learning In Production
+                </li>
+                <li>
+                  <span>UCSanDiego</span><br />Machine Learning With Big Data
+                </li>
+                <li><span>IBM</span><br />Python for DS, AI and Development</li>
+                <li><span>LearnQuest</span><br />Introduction to Java</li>
+                <li>
+                  <span>Google</span><br />Foundations: Data, Data, Everywhere
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio">
+      <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <h2>Effects of phones on humans</h2>
+        <div class="work-list">
+          <div class="work">
+            <img src="images/p1.jpg" alt="" />
+            <div class="layer">
+              <p>
+                Recent research suggests that smartphone usage does indeed
+                affect the brain. Remember, however, that such research is still
+                in the early stages. While we know a bit more about some of the
+                short-term effects, the long-term effects remain to be seen.Some
+                evidence indicates that using mobile phones might lead to
+                chemical changes in the brain. In one study presented to the
+                Radiological Society of North America, researchers found that
+                young people with a so-called internet and smartphone addiction
+                actually demonstrated imbalances in brain chemistry compared to
+                a control group.
+              </p>
+              <a href="#"><i class="fa-solid fa-link"></i> </a>
+            </div>
+          </div>
+          <div class="work">
+            <img src="images/p3.avif" alt="" />
+            <div class="layer">
+              <p>
+                We use our phones for many things, from making business calls to
+                checking our email to communicating with friends and loved ones.
+                Our phones have become an inextricable part of our lives. But
+                does this reliance on smartphones have any impact on our brains?
+                Some recent research indicates that it might. Experts suggest
+                that all of this phone use might affect our social and emotional
+                regulation skills, disrupt our sleep, and turn us into lazy
+                thinkers. Kids are also using these devices more and more, which
+                has led experts to question the possible long-term effects on
+                development. One study published in JAMA Pediatrics found that
+                the amount of time kids spend staring at digital screens rose
+                52% over a three-year period.1 How this might affect development
+                remains to be seen. However, it is a question of interest for
+                healthcare practitioners, mental health professionals,
+                educators, parents, and anyone who uses a smartphone
+                regularly.Setting specific limits on your phone use can be
+                helpful. It's important to be purposeful about your mobile phone
+                use, but you should also consider what works for you. For some
+                people, this might involve removing certain apps from their
+                phones. Others may find it helpful to use apps or phone settings
+                to control how long they use certain apps or websites each day.
+                Some people find that it is helpful to have phone-free times or
+                even entire days. For example, you might decide you won't use
+                your phone after 7 PM or on Saturdays so you can fully focus on
+                the other people in your life.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script>
+      var tablinks = document.getElementsByClassName("tab-links");
+      var tabcontents = document.getElementsByClassName("tab-contents");
+      function opentab(tabname) {
+        for (tablink of tablinks) {
+          tablink.classList.remove("active-link");
+        }
+        for (tabcontent of tabcontents) {
+          tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+      }
+    </script>
+  </body>
+</html>
